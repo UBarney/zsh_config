@@ -118,3 +118,6 @@ source ~/shell/prompt_fish.sh
 alias winCmd='cmd.exe /c'
 
 alias start='explorer.exe .'
+
+# ^? 为控制字符 表示 backspace https://en.wikipedia.org/wiki/Caret_notation
+bindkey '^^?' kill-word
