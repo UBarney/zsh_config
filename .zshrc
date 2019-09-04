@@ -120,4 +120,6 @@ alias winCmd='cmd.exe /c'
 alias start='explorer.exe .'
 
 # ^? 为控制字符 表示 backspace https://en.wikipedia.org/wiki/Caret_notation
-bindkey '^^?' kill-word
+# ^H 表示 ctrl+backspace ^[ 表示esc
+# http://zsh.sourceforge.net/Intro/intro_11.html
+bindkey '^H' 'backward-kill-word'
