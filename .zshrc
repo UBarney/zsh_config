@@ -123,3 +123,11 @@ alias start='explorer.exe .'
 # ^H 表示 ctrl+backspace ^[ 表示esc
 # http://zsh.sourceforge.net/Intro/intro_11.html
 bindkey '^H' 'backward-kill-word'
+
+
+# alias for git 
+alias gtcln="git clone "
+alias gtp="git push "
+alias gtco="git checkout "
+alias gtsts="git stash "
+alias gtbrch="git branch "
