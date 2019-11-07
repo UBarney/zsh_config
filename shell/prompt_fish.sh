@@ -1,3 +1,4 @@
+# ref: https://zhuanlan.zhihu.com/p/51008087
 function _fish_collapsed_pwd() {
     local pwd="$1"
     local home="$HOME"
@@ -46,7 +47,7 @@ else
     if [ $UID -eq 0 ]; then
 	 export PROMPT='%{$fg_bold[yellow]%}%m $FG[039] $(_fish_collapsed_pwd)%f # '
     else
-	export PROMPT='%{$fg_bold[yellow]%}%m $FG[039] $(_fish_collapsed_pwd)%f > '
+	export PROMPT='%{$fg_bold[yellow]%}%m $FG[123] $(_fish_collapsed_pwd)%f > '
     fi
 fi
 
