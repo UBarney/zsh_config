@@ -3,9 +3,9 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
-source ~/antigen.zsh
-export PATH=$PATH:/usr/local/go/bin:~/.local/bin
-export GOPATH=/mnt/c/Users/UBarney/go/
+source ~/shell/antigen.zsh
+export GOPATH=~/GOPATH
+export PATH=$PATH:/usr/local/go/bin:~/.local/bin:${GOPATH}/bin
 
 
 # Set name of the theme to load. Optionally, if you set this to "random"
@@ -13,7 +13,6 @@ export GOPATH=/mnt/c/Users/UBarney/go/
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 antigen use oh-my-zsh
-antigen bundle heroku
 antigen bundle pip
 antigen bundle lein
 antigen bundle command-not-found
@@ -115,10 +114,6 @@ antigen apply
 export TERM=xterm-256color
 source ~/shell/prompt_fish.sh
 
-alias winCmd='cmd.exe /c'
-
-alias start='explorer.exe .'
-
 # ^? 为控制字符 表示 backspace https://en.wikipedia.org/wiki/Caret_notation
 # ^H 表示 ctrl+backspace ^[ 表示esc
 # http://zsh.sourceforge.net/Intro/intro_11.html
@@ -131,3 +126,9 @@ alias gtp="git push "
 alias gtco="git checkout "
 alias gtsts="git stash "
 alias gtbrch="git branch "
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+set enable-bracketed-paste
+
+alias cl="clear"
