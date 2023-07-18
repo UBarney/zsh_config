@@ -3,7 +3,7 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
-source ~/shell/antigen.zsh
+source ~/script/antigen.zsh
 export GOPATH=~/GOPATH
 export PATH=$PATH:/usr/local/go/bin:~/.local/bin:${GOPATH}/bin
 
@@ -112,7 +112,7 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen apply
 #PROMPT='%{$fg_bold[yellow]%}%M %{$fg_bold[green]%}➜ %{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}%{$fg_bold[blue]%} % %{$reset_color%}'
 export TERM=xterm-256color
-source ~/shell/prompt_fish.sh
+source ~/script/prompt_fish.sh
 
 # ^? 为控制字符 表示 backspace https://en.wikipedia.org/wiki/Caret_notation
 # ^H 表示 ctrl+backspace ^[ 表示esc
