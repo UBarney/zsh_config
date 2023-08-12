@@ -7,4 +7,7 @@ echo y | ~/.fzf/install
 
 cd ~
 git clone https://github.com/UBarney/zsh_config
-cp -r ~/config/config/* ~
+cd zsh_config
+cp -a script/ ~
+curl -L git.io/antigen > ~/script/antigen.zsh
+cp -a config/. ~
